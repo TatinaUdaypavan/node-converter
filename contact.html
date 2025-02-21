@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+
+        .contact-container {
+            background: #161616;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(183, 75, 75, 0.5);
+            border-radius: 8px;
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #b74b4b;
+            margin-bottom: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background: #222;
+            border: 1px solid #b74b4b;
+            border-radius: 5px;
+            color: white;
+        }
+
+        button {
+            background-color: #b74b4b;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background-color: white;
+            color: #b74b4b;
+            box-shadow: 0 0 10px #b74b4b;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <p>Fill out the form below to get in touch.</p>
+
+        <form id="contactForm" action="https://formsubmit.co/pavan.tatina@sasi.ac.in" method="POST">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

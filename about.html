@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Pavan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 2.5em;
+            position: relative;
+            animation: floatText 3s infinite alternate ease-in-out;
+        }
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 20px auto;
+            opacity: 0;
+            animation: fadeIn 3s forwards 1s;
+        }
+        .glow {
+            text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff, 0 0 40px #00f2ff;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes floatText {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="1703411257862.jpg" alt="Pavan">
+        <h1 class="glow">Hello, I'm Pavan</h1>
+        <p>I am an IT student and a fresher with a passion for technology, coding, and problem-solving. Always eager to learn and explore new innovations in the tech world!</p>
+    </div>
+</body>
+</html>
